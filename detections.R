@@ -33,10 +33,6 @@ detect_negative_bs<-function(VarID, VCF, ValidationMatrix){
       bs_indices <- index_vec[index_bs_vec]
       sample_col <- strsplit(VCF[bs_indices, 10], ':')
       genotypes <- sapply(sample_col, "[", 1)
-      ############ - test, remove
-      print (paste("<test> here number of bs in that position:_---------------------", ValidationMatrix$CHR[wval],ValidationMatrix$EvaluatedPosition[wval]))
-      print (length(bs_indices))
-      ############ - end test, remove
       if (all(genotypes  %in% v_missing_allele) ){retval <- '.'} 
       if (all(genotypes  %in% v_reference_allele) ){retval <- 0} 
       for (index in bs_indices){
