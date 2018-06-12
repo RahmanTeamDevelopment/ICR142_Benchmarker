@@ -1,0 +1,80 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.9.3
+RVersion: 3.1.2
+Repos: CRAN=http://cran.ma.imperial.ac.uk
+
+Package: R.methodsS3
+Source: CRAN
+Version: 1.7.1
+Hash: 99f841ba1614c005e6672c5fb01b352a
+
+Package: R.oo
+Source: CRAN
+Version: 1.22.0
+Hash: c37ded09136c4ae98b9c73cf42dee3c8
+Requires: R.methodsS3
+
+Package: R.utils
+Source: CRAN
+Version: 2.6.0
+Hash: 7d46f5c3a914a82db092e1404d6ae624
+Requires: R.methodsS3, R.oo
+
+Package: R6
+Source: CRAN
+Version: 2.2.2
+Hash: b2366cd9d2f3851a5704b4e192b985c2
+
+Package: Rcpp
+Source: CRAN
+Version: 0.12.17
+Hash: d2eff4634ccd7aca030c540ad805ac4a
+
+Package: base64enc
+Source: CRAN
+Version: 0.1-3
+Hash: c590d29e555926af053055e23ee79efb
+
+Package: digest
+Source: CRAN
+Version: 0.6.15
+Hash: 1f202ebd812ac7192be3739245746a13
+
+Package: htmltools
+Source: CRAN
+Version: 0.3.6
+Hash: b24df7ea0856eab6618f6a56016d940d
+Requires: Rcpp, digest
+
+Package: magrittr
+Source: CRAN
+Version: 1.5
+Hash: bdc4d48c3135e8f3b399536ddf160df4
+
+Package: officer
+Source: CRAN
+Version: 0.3.0
+Hash: a9087d315c1ddaaf044666468d9edcf9
+Requires: R.utils, R6, Rcpp, base64enc, digest, htmltools, magrittr,
+    uuid, xml2, zip
+
+Package: packrat
+Source: CRAN
+Version: 0.4.9-3
+Hash: 03fb817297975f1da0d1b774b47620b3
+
+Package: uuid
+Source: CRAN
+Version: 0.1-2
+Hash: 69acbbcf4dcff3a258f94de540214001
+
+Package: xml2
+Source: CRAN
+Version: 1.2.0
+Hash: a9af563f148c0170654bd9b4bb974ba7
+Requires: Rcpp
+
+Package: zip
+Source: CRAN
+Version: 1.0.0
+Hash: eeef8cf88fb0a89636fe26c134eaef32
