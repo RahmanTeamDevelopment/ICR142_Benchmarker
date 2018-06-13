@@ -1,3 +1,4 @@
+packrat::on()
 suppressPackageStartupMessages(library(R.utils, quietly = TRUE, warn.conflicts=FALSE))
 source("detections.R")
 source("statistics.R")

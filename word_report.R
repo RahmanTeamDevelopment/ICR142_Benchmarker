@@ -1,3 +1,4 @@
+packrat::on()
 source("helper.R")
 
 suppressPackageStartupMessages(library(magrittr, quietly = TRUE, warn.conflicts=FALSE))
@@ -7,6 +8,8 @@ suppressPackageStartupMessages(library(officer, quietly = TRUE, warn.conflicts=F
 
 # Generate Report.docx file which reports of the method’s performance on the ICR142 dataset, constructed from the Summary.txt and FullResults.txt files 
 generate_report <- function(output_dir, submitter){
+
+  cat ("\n --- Generating word report ...\n")
   folder_path <- output_dir
   PerformanceSummary <- read.table(paste(folder_path, "/", "Summary.txt", sep = ""), sep = "\t", hea = T, stringsAsFactors = F)
   FullResults <- read.table(paste(folder_path, "/", "FullResults.txt", sep = ""), sep = "\t", hea = T, stringsAsFactors = F)

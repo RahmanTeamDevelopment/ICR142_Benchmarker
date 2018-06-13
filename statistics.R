@@ -18,6 +18,7 @@ concordantVal <- function(sanger, method){
 # Calculate performance metrics and generate Summary.txt, FullResults.txt files ---------------------------
 calculate_stats <- function(icr142mat, output_dir, ExactFinalMatch, submitter){
   
+  cat ("\n ---Calculating statistics ... \n")
   # Load data generated from detections.R
   methods_mat <- read.table(file.path(output_dir, "NumberOfDetections.txt"), sep = "\t", hea = T, stringsAsFactors = F, colClasses = c("character")) #integer
   

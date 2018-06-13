@@ -14,7 +14,7 @@ goodbye_message <- function(){
 
 # Read ICR142 NGS Validation table ---------------------------
 read_icr142 <- function(){
-  icr142mat <- read.table("data/SupportingFile1_20180612.txt",sep="\t",hea=T,stringsAsFactors=F)
+  icr142mat <- read.table("data/SupportingFile1_20180612.txt", sep = "\t", hea = T, stringsAsFactors = F)
 }
 # Check input arguments ---------------------------
 check_args <- function(fkey_in, icr142mat, submitter){
@@ -41,8 +41,6 @@ check_args <- function(fkey_in, icr142mat, submitter){
     print("ERROR: Method name (--method_name) must be provided. Execution halted")
     quit()
   }
-  
-
   return (fkey)
 }
 
