@@ -73,5 +73,8 @@ calculate_stats <- function(icr142mat, output_dir, ExactFinalMatch, submitter){
   final_detection_table[["ConcordantFinalResult"]] <- mapply(concordantVal, final_detection_table$SangerCall, final_detection_table[[submitter]])
   final_detection_table <- cbind(final_detection_table, ExactFinalMatch)
   write.table(final_detection_table, file.path(output_dir, "FullResults.txt"), sep = '\t', row.names = F, quote = F)
+  
+  # Remove temporary detections file
+  file.remove(file.path(output_dir, "NumberOfDetections.txt"))
 }
 
