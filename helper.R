@@ -1,7 +1,7 @@
 
 #Print welcome message and start time ---------------------------
 welcome_message <- function(){
-  cat("\n ---  ICR142 Utilisation Script  ---\n\n")
+  cat("\n ---  ICR142_Benchmarking  ---\n\n")
   start_time <- Sys.time()
   cat (paste(" --- Started in: ", start_time, " \n"))
 }
