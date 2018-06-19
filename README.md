@@ -3,3 +3,5 @@ An easy to use tool for understanding variant caller performance using the ICR14
 
 ## Quick start
 - Clone the repo: `git clone https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking.git`
+- Go to main directory: `cd ICR142_Benchmarking`
+- Install with: `./setup.sh`
