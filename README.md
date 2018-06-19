@@ -16,8 +16,8 @@ ICR142_Benchmarking implements strict version control over all packages and depe
 setup.sh downloads and installs all required packages and dependencies, automatically creating a setup.log file.
 
 ## Running ICR142_Benchmarking
-Run the following command from the directory containing the ICR142_Benchmarking scripts:
-`./ICR142_Benchmarking --input _input.txt_ --method_name *method_name* --output *path_to_output_directory*`
+Run the following command from the directory containing the ICR142_Benchmarking scripts:\
+**./ICR142_Benchmarking**   **--input** *input.txt*   **--method_name** *method_name*   **--output** *path_to_output_directory*
 
 ## License
 Code released under the [MIT License] (https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/LICENSE).
