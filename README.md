@@ -59,7 +59,7 @@ ___
 Key points from the detailed outputs are highlighted to the user, including information about the method’s performance in the context of existing best practice.
 \
 \
-:information_source: Detailed description of all columns in the .txt files is provided in [data/ColumnHeadings.txt] supporting file.(https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/ColumnHeadings.txt). 
+:information_source: Detailed description of all columns in the .txt files is provided in [data/ColumnHeadings.txt](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/ColumnHeadings.txt) supporting file. 
 
 ## Input VCF files
 ___
