@@ -58,6 +58,7 @@ ___
 - **Report.docx** - Word document providing a clear variant calling analysis report of the method’s performance on the ICR142 dataset.
 Key points from the detailed outputs are highlighted to the user, including information about the method’s performance in the context of existing best practice.
 \
+\
 :information_source: Detailed description of all columns in the .txt files is provided in [data/ColumnHeadings.txt supporting file](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/ColumnHeadings.txt). 
 
 ## Input VCF files
