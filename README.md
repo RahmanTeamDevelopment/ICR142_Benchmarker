@@ -34,10 +34,10 @@ Once `ICR142_Benchmarking` has been downloaded and successfully installed, run t
 ## Input
 ___
 - **INPUT** file - path to tab separated input file containing:\
-`Header line` with SampleID and Location 
+`Header line` with SampleID and Location \
 `Data` with:
   1. Sample IDs (same name and format as seen in [Sanger validation information](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/SupportingFile1_20180612.txt))
-  1. Paths to 142 [VCF v4.X files](#Input VCF files)
+  2. Paths to 142 [VCF v4.X files](#Input VCF files)
 
 SampleID | Location
 ------------ | -------------
@@ -64,7 +64,7 @@ Key points from the detailed outputs are highlighted to the user, including info
 ___
 - The `VCF` files must each represent a **single sample**.
 - ALT column should contain only **one call** (no multi-allelic calls accepted).
-- Any base substitution calls are expected to have REF and ALT values of **length one**
+- Any base substitution calls are expected to have REF and ALT values of **length one**.
 ```diff
 - REF / ALT of GTCA / ATCA
 + REF / ALT of G / A
@@ -75,7 +75,7 @@ ___
 ## Data Access and Reproducibility
 ___
 To allow repreoducibility we provide inputs and outputs generated for `GATK`, `OpEx` and `DeepVariant`.
-Data can be downloaded from [OSF cloud](https://osf.io/h3zr9/)
+Data can be downloaded from [OSF cloud](https://osf.io/h3zr9/).
 
 ## Links
 ___
