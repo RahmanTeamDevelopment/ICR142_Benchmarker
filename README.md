@@ -1,8 +1,9 @@
 
-# ICR142_Benchmarking
+![logo](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/images/TGMI_COMPACT_transparent.png)
+# ICR142 Benchmarking
 
 ## Introduction
-An easy to use tool for understanding variant caller performance using the ICR142 NGS validation series. 
+`ICR142_Benchmarking` is an easy to use tool for understanding variant caller performance using the [ICR142 NGS validation](https://www.ebi.ac.uk/ega/studies/EGAS00001001332) series. 
 ICR142_Benchmarking reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and performance in the context of existing best practice. 
 
 
@@ -50,8 +51,16 @@ Key points from the detailed outputs are highlighted to the user, including info
 \
 :information_source: Detailed description of all columns in the .txt files is provided in the ColumnHeaders.txt supporting file. 
 
+## Data Access and Reproducibility
+To allow repreoducibility we provide inputs and outputs generated for GATK, OpEx and DeepVariant.
+Data can be downloaded from [OSF cloud](https://osf.io/h3zr9/)
+
+## Links
+- [Raw data on EGA (Europian Genome Archive)](https://www.ebi.ac.uk/ega/studies/EGAS00001001332)
+- [OSF](https://osf.io/h3zr9/)
+- [TGMI](http://www.thetgmi.org/)
 
 ## License
 Code released under the [MIT License](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/LICENSE).
 
-## Links
+
