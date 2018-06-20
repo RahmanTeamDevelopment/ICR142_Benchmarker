@@ -1,6 +1,6 @@
 
 ![logo](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/images/TGMI_COMPACT_transparent.png)
-#### ICR142 Benchmarking
+# ICR142 Benchmarking
 
 ## Introduction
 ___
