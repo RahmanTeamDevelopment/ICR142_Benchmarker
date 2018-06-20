@@ -22,7 +22,7 @@ ___
 - Clone the repo: `git clone https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking.git`
 - Go to main directory: `cd ICR142_Benchmarking`
 - Install with: `./setup.sh`\
-setup.sh downloads and installs all required packages and dependencies, automatically creating a `setup.log` file.
+`setup.sh` downloads and installs all required packages and dependencies, automatically creating a `setup.log` file.
 
 ## Running ICR142_Benchmarking
 ___
@@ -59,7 +59,7 @@ ___
 Key points from the detailed outputs are highlighted to the user, including information about the method’s performance in the context of existing best practice.
 \
 \
-:information_source: Detailed description of all columns in the .txt files is provided in [data/ColumnHeadings.txt supporting file](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/ColumnHeadings.txt). 
+:information_source: Detailed description of all columns in the .txt files is provided in [data/ColumnHeadings.txt] supporting file.(https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/ColumnHeadings.txt). 
 
 ## Input VCF files
 ___
