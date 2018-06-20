@@ -6,6 +6,7 @@
 ___
 `ICR142_Benchmarking` is an easy to use tool for understanding variant caller performance using the [ICR142 NGS validation](https://www.ebi.ac.uk/ega/studies/EGAS00001001332) series. 
 `ICR142_Benchmarking` reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and performance in the context of existing best practice. 
+`ICR142_Benchmarking` allows variant detections filters optimisation as well as independent regression testing to understand any changes which may occur due to a software update.
 
 
 ## Prerequisites
