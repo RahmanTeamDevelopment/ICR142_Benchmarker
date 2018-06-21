@@ -1,4 +1,6 @@
 ## File: FullResults.txt	
+___
+
 Column_name | Description
 ----------- | -----------
 Sample |sample name in the ICR142 series
