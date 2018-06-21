@@ -37,7 +37,7 @@ ___
 `Header line` with SampleID and Location \
 `Data` with:
   1. Sample IDs (same name and format as seen in [Sanger validation information](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/SupportingFile1_20180612.txt))
-  2. Paths to 142 [VCF v4.X files](#Input VCF files)
+  2. Paths to 142 [VCF v4.X files](#notes)
 
 SampleID | Location
 ------------ | -------------
@@ -61,7 +61,8 @@ Key points from the detailed outputs are highlighted to the user, including info
 \
 :information_source: Detailed description of all columns in the .txt files is provided in [data/ColumnHeadings.txt](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarking/blob/master/data/ColumnHeadings.txt) supporting file. 
 
-## Input VCF files
+## Notes
+### VCF Files
 ___
 - The `VCF` files must each represent a **single sample**.
 - ALT column should contain only **one call** (no multi-allelic calls accepted).
