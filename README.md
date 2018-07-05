@@ -19,11 +19,9 @@ ___
 ___
 `ICR142 Benchmarker` implements strict version control over all packages and dependencies used by changing the local default R settings. Any R session launched from the same tool directory will have these settings, therefore it is strongly recommended to install the tool into a new directory.
 
-`ICR142 Benchmarker` v1.0.0 can be downloaded from GitHub from [here]() in either `.zip` or `.tar.gz` format.
-To unpack these run one of the following commands:
-- `unzip ICR142_Benchmarker-1.0.0.zip` **or** `tar -xvzf ICR142_Benchmarker-1.0.0.tar.gz`\
-Then you can install `ICR142 Benchmarker` with the following commands:
-- Go to main directory: `cd ICR142_Benchmarker`
+`ICR142 Benchmarker` v1.0.0 can be downloaded from GitHub from [here](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/releases/tag/v0.1.0) in either `.zip` or `.tar.gz` format.
+- unpack the compressed file
+- Go to main directory: `cd ICR142_Benchmarker-vXXX`
 - Install with: `./setup.sh`\
 `setup.sh` downloads and installs all required packages and dependencies, automatically creating a `setup.log` file.
 
