@@ -1,12 +1,12 @@
 
-#Print welcome message and start time ---------------------------
+# Print welcome message and start time ---------------------------
 welcome_message <- function(){
-  cat("\n ---  ICR142_Benchmarking  ---\n\n")
+  cat("\n --- ICR142_Benchmarker  \n\n")
   start_time <- Sys.time()
   cat (paste(" --- Started in: ", start_time, " \n\n"))
 }
 
-#Print goodbye message and end time ---------------------------
+# Print goodbye message and end time ---------------------------
 goodbye_message <- function(){
   end_time <- Sys.time()
   cat(paste ("\n --- Finished in: ", end_time, " \n"))
@@ -16,10 +16,9 @@ goodbye_message <- function(){
 read_icr142 <- function(){
   icr142mat <- read.table("data/ICR142_Validation_Table.txt", sep = "\t", hea = T, stringsAsFactors = F)
 }
+
 # Check input arguments ---------------------------
 check_args <- function(fkey_in, icr142mat, submitter){
-  
-  # Check input file
   if (is.null(fkey_in)){
     print("ERROR: Input file (--input) must be provided. Execution halted")
     quit()
@@ -29,21 +28,17 @@ check_args <- function(fkey_in, icr142mat, submitter){
     print("ERROR: Input file header must have SampleID and Location columns!")
     quit()
   }
-  #### ----- remove comments after testing
-  #if (nrow(fkey) != 142){
-  #  print(paste("ERROR: Input file must contain exactly 142 samples."))
-  #  quit()
+  if (nrow(fkey) != 142){
+    print(paste("ERROR: Input file must contain exactly 142 samples."))
+    quit()
     
-  #}
-  
-  #----------------------
+  }
   if (is.null(submitter)){
     print("ERROR: Method name (--method_name) must be provided. Execution halted")
     quit()
   }
   return (fkey)
 }
-
 
 # Get text inside parenthesis ---------------------------
 geti<-function(text){

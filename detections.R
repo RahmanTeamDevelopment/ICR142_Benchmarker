@@ -7,11 +7,11 @@ ExactFinalMatch <<- rep('no', nrow(icr142mat))
 ExactFinalMatch[(which(icr142mat[,"SangerCall"] == "No"))] <- "."
 
 df_header <- data.frame(CHR = "CHR", pos = "POS", ID = "ID", ref = "REF", alt = "ALT", qual = "QUAL", filter_v = "FILTER", i = "INFO", format_v = "FORMAT", sample_v = "SAMPLE", SiteID = "SiteID", len = "Length", stringsAsFactors = F)
-fp_table <<- df_header # true positives
-tp_table <<- df_header #false positives
+fp_table <<- df_header # True positives
+tp_table <<- df_header # False positives
 
-v_missing_allele <- c("./.", ".|.", ".") # all possible values indicating missingness in genotype (GT) value
-v_reference_allele <- c("0/0", "0|0", "0") # all possible values indicating reference call in genotype (GT) value
+v_missing_allele <- c("./.", ".|.", ".") # All possible values indicating missingness in genotype (GT) value
+v_reference_allele <- c("0/0", "0|0", "0") # All possible values indicating reference call in genotype (GT) value
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ detect_negative_indel <- function(VarID, VCF, ValidationMatrix)
   wval <- which(ValidationMatrix$SiteID == VarID)
   vnames<-paste(ValidationMatrix$CHR[wval], (ValidationMatrix$EvaluatedPosition[wval] - 100):(ValidationMatrix$EvaluatedPosition[wval] + 100), sep = " ")
   vcfnames <- paste(VCF[,1],VCF[,2], sep = " ")
-  retval <- 0 # note: in case there are only bs and missing genotypes ('.') detected within the site region, retval = 0 (not '.')
+  retval <- 0 # Note: in a site region where only bs and missing genotypes ('.') are detected, retval = 0 (not '.')
   if(any(vnames %in% vcfnames)){
     wvec <- which(nchar(VCF[vcfnames %in% vnames, 4]) > 1 | nchar(VCF[vcfnames %in% vnames, 5]) > 1)
     if (length(wvec) > 0){
@@ -109,8 +109,8 @@ detect_variant_indel <- function(VarID, VCF, ValidationMatrix){
   wval <- which(ValidationMatrix$SiteID == VarID)
   vnames <- paste(ValidationMatrix$CHR[wval], (ValidationMatrix$EvaluatedPosition[wval] - 100):(ValidationMatrix$EvaluatedPosition[wval] + 100), sep=" ")
   vcfnames <- paste(VCF[,1], VCF[,2], sep = " ")
-  retval <- 0 # note: in case there are only bs and missing genotypes ('.') detected within the site region, retval = 0 (not '.')
-  if(any(vnames%in%vcfnames)){
+  retval <- 0 # Note: in a site region where only bs and missing genotypes ('.') are detected, retval = 0 (not '.')
+  if(any(vnames %in% vcfnames)){
     wvec <- which(nchar(VCF[vcfnames %in% vnames, 4]) > 1 | nchar(VCF[vcfnames %in% vnames, 5]) > 1)
     if (length(wvec) > 0 ){
       v <- which(vcfnames %in% vnames, arr.ind = TRUE)

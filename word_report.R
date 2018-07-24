@@ -45,7 +45,9 @@ generate_report <- function(output_dir, submitter){
     
     body_replace_text_at_bkm("miss_variants", miss_variants) %>%
     body_replace_text_at_bkm("miss_negative", miss_negative) %>%
-    body_replace_text_at_bkm("miss_samples", miss_samples) 
+    body_replace_text_at_bkm("miss_samples", miss_samples) %>%
+
+    body_replace_text_at_bkm("Date", as.character(Sys.Date())) 
   
   
   print(doc, target = paste(folder_path, "Report.docx", sep="/"))
