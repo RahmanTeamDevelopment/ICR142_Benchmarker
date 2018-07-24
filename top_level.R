@@ -5,8 +5,11 @@ source("statistics.R")
 source("helper.R")
 source("word_report.R")
 
+# Set version
+version <- "v1.0.0"
+
 # Print welcome message and start time ---------------------------
-welcome_message()
+welcome_message(version)
 
 # Load ICR142 NGS Validation table ---------------------------
 icr142mat <- read_icr142()
