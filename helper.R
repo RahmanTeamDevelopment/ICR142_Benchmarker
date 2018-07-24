@@ -3,7 +3,7 @@
 welcome_message <- function(){
   cat("\n ---  ICR142_Benchmarking  ---\n\n")
   start_time <- Sys.time()
-  cat (paste(" --- Started in: ", start_time, " \n"))
+  cat (paste(" --- Started in: ", start_time, " \n\n"))
 }
 
 #Print goodbye message and end time ---------------------------
