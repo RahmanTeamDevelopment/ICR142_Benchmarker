@@ -60,7 +60,7 @@ ___
 Key points from the detailed outputs are highlighted to the user, including information about the method’s performance in the context of existing best practice.
 
 ### Column Headings
-:information_source: Detailed description of all columns in the .txt files can also be found in [here](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ColumnHeadings.txt)
+:information_source: Detailed description of all columns in the .txt files can also be found [here](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ColumnHeadings.txt)
 ___
 ### File: FullResults.txt	
 Column_name | Description
