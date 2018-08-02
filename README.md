@@ -4,7 +4,7 @@
 
 ## Introduction
 ___
-`ICR142 Benchmarker` is an easy to use tool assessing variant caller performance using the [ICR142 NGS validation series](https://www.ebi.ac.uk/ega/studies/EGAS00001001332).\ 
+`ICR142 Benchmarker` is an easy to use tool assessing variant caller performance using the [ICR142 NGS validation series](https://www.ebi.ac.uk/ega/studies/EGAS00001001332).&nbsp;
 `ICR142 Benchmarker` reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and comparative performance with current widely-used open-sourced pipelines.
 
 
