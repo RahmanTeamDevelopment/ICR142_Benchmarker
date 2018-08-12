@@ -128,7 +128,7 @@ detect_variant_indel <- function(VarID, VCF, ValidationMatrix){
           retval <- retval + 1
           tp_to_add <- data.frame(CHR = VCF[index, 1], pos = VCF[index, 2], ID = VCF[index, 3], ref = VCF[index, 4], alt = VCF[index, 5], qual = VCF[index, 6], filter_v = VCF[index, 7], i = VCF[index, 8], format_v = VCF[index,9], sample_v = VCF[index, 10], SiteID = VarID, len = max(nchar(VCF[index, 4]), nchar(VCF[index, 5])) - 1, stringsAsFactors = F)
           tp_table <<- rbind(tp_table, tp_to_add)
-          if (ValidationMatrix$REF[wval] == VCF[index, 4] & ValidationMatrix$ALT[wval] == VCF[index, 5]) ExactFinalMatch[VarID] <<- "yes"                      
+          if (ValidationMatrix$POS[wval] == VCF[index, 2] & ValidationMatrix$REF[wval] == VCF[index, 4] & ValidationMatrix$ALT[wval] == VCF[index, 5]) ExactFinalMatch[VarID] <<- "yes"                      
         }	
       }
     }	
