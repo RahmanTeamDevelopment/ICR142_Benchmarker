@@ -6,7 +6,7 @@ source("helper.R")
 source("word_report.R")
 
 # Set version
-version <- "v1.0.0"
+version <- "v1.0.1"
 
 # Print welcome message and start time ---------------------------
 welcome_message(version)
