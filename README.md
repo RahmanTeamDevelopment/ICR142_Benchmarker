@@ -70,10 +70,10 @@ SangerCall | the most 3' representation annotated with [CSN](https://genomemedic
 Type | `bs`, `del`, `ins`, `complex` or `indel` for _base substitutions_, _simple deletions_, _simple insertions_, _complex indels_, or _negative indel_ sites, respectively
 Transcript | the ENST ID from Ensembl v65 used to annotate the Sanger call
 CHR | chromosome
-EvaluatedPosition | evaluated hg19 site position, centre of designed amplicon
-POS | the left-aligned position in hg19 coordinates for variants
-REF | the reference allele in hg19 for variants
-ALT | the alternative allele in hg19 for variants
+EvaluatedPosition | evaluated GRCh37/GRCh38 site position, centre of designed amplicon
+POS | the left-aligned position in GRCh37/GRCh38 coordinates for variants
+REF | the reference allele in GRCh37/GRCh38 for variants
+ALT | the alternative allele in GRCh37/GRCh38 for variants
 Zygosity | `homozygous` or `heterozygous` for variants based on Sanger call
 SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table.txt)
 Group | `A`, `B` or `.` see [GroupDescriptions](#groupdescriptions)
