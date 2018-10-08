@@ -6,20 +6,21 @@ source("helper.R")
 source("word_report.R")
 
 # Set version
-version <- "v1.0.1"
+version <- "v1.0.2"
 
 # Print welcome message and start time ---------------------------
 welcome_message(version)
-
-# Load ICR142 NGS Validation table ---------------------------
-icr142mat <- read_icr142()
 
 # Read, check input arguments ---------------------------  
 args = commandArgs(asValue = TRUE)
 fkey_in <- args$input
 submitter <- args$method_name
 output_dir <- args$output
-fkey <- check_args(fkey_in, icr142mat, submitter)
+genome_build <- args$genome_build
+fkey <- check_args(fkey_in, icr142mat, genome_build, submitter)
+
+# Load ICR142 NGS Validation table ---------------------------
+icr142mat <- read_icr142(genome_build)
 
 # Create output directory ---------------------------
 if (is.null(output_dir)){

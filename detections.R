@@ -1,23 +1,12 @@
 source("helper.R")
 
-# Read ICR142 NGS Validation table
-icr142mat <- read_icr142()
 
-ExactFinalMatch <<- rep('no', nrow(icr142mat))
-ExactFinalMatch[(which(icr142mat[,"SangerCall"] == "No"))] <- "."
-
-df_header <- data.frame(CHR = "CHR", pos = "POS", ID = "ID", ref = "REF", alt = "ALT", qual = "QUAL", filter_v = "FILTER", i = "INFO", format_v = "FORMAT", sample_v = "SAMPLE", SiteID = "SiteID", len = "Length", stringsAsFactors = F)
-fp_table <<- df_header # True positives
-tp_table <<- df_header # False positives
-
-v_missing_allele <- c("./.", ".|.", ".") # All possible values indicating missingness in genotype (GT) value
-v_reference_allele <- c("0/0", "0|0", "0") # All possible values indicating reference call in genotype (GT) value
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Function to assesss detection of a negative base substitution site in a VCF file, taking as input VarID which is a SiteID from ValidationMatrix and the VCF data.frame file to be queried
-detect_negative_bs<-function(VarID, VCF, ValidationMatrix){
+detect_negative_bs <- function(VarID, VCF, ValidationMatrix){
   wval <- which(ValidationMatrix$SiteID == VarID)
   vname <- paste(ValidationMatrix$CHR[wval], ValidationMatrix$EvaluatedPosition[wval], sep = " ")
   vcfnames <- paste(VCF[,1], VCF[,2], sep = " ")
@@ -156,6 +145,20 @@ run_variant_detection <- function(SampleID, Location, icr142mat){
 
 # Populate DetectedMatrix ---------------------------
 get_detected_matrix <- function(icr142mat, fkey, output_dir, submitter){
+  print (nrow(icr142mat))
+
+  #******************** Initialize params:
+  ExactFinalMatch <<- rep('no', nrow(icr142mat))
+  ExactFinalMatch[(which(icr142mat[,"SangerCall"] == "No"))] <<- "."
+
+  df_header <- data.frame(CHR = "CHR", pos = "POS", ID = "ID", ref = "REF", alt = "ALT", qual = "QUAL", filter_v = "FILTER", i = "INFO", format_v = "FORMAT", sample_v = "SAMPLE", SiteID = "SiteID", len = "Length", stringsAsFactors = F)
+  fp_table <<- df_header # True positives
+  tp_table <<- df_header # False positives
+
+  v_missing_allele <<- c("./.", ".|.", ".") # All possible values indicating missingness in genotype (GT) value
+  v_reference_allele <<- c("0/0", "0|0", "0") # All possible values indicating reference call in genotype (GT) value
+  #*********************
+
   DetectedMatrix <- matrix("NA", nrow=nrow(icr142mat), ncol=1)
   colnames(DetectedMatrix) <- submitter
   for(i in 1:nrow(fkey)){
