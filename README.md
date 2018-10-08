@@ -28,7 +28,7 @@ ___
 ___
 Once `ICR142 Benchmarker` has been downloaded and successfully installed, run the following command from the main directory of the tool:
 \
-`./ICR142_Benchmarker --input input.txt --method_name name [--output path_to_output_directory]`
+`./ICR142_Benchmarker --input input.txt --method_name name --genome_build buildNumber [--output path_to_output_directory]`
 
 
 ## Input
@@ -45,7 +45,8 @@ D129031 | path/to/D129031.vcf
 L81899 | path/to/L81899.vcf
 ... | ...
 
-- **METHOD** - one word variant caller identifier (can be delimiter-separated)
+- **METHOD_NAME** - one word variant caller identifier (can be delimiter-separated)
+- **GENOME_BUILD** - 37 or 38 for GRCh37 or GRCh38, respectively
 - **OUTPUT** - path to exitsting or new folder in which outputs will be created. This argument is **optional**, by default "Output_ICR142_Analysis" folder will be created in the main ICR142_Benchmarker directory.
 
 ## Output
