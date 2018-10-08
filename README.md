@@ -141,7 +141,7 @@ Data can be downloaded from [OSF cloud](https://osf.io/h3zr9/).
 
 ## Links
 __
-- [ICR142 Benchmarker Published Article (https://wellcomeopenresearch.org/articles/3-108/v1)_
+- [ICR142 Benchmarker Published Article] (https://wellcomeopenresearch.org/articles/3-108/v1)_
 - [Raw data on EGA (Europian Genome Archive)](https://www.ebi.ac.uk/ega/studies/EGAS00001001332)
 - [OSF](https://osf.io/h3zr9/)
 - [TGMI](http://www.thetgmi.org/)
