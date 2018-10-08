@@ -145,7 +145,6 @@ run_variant_detection <- function(SampleID, Location, icr142mat){
 
 # Populate DetectedMatrix ---------------------------
 get_detected_matrix <- function(icr142mat, fkey, output_dir, submitter){
-  print (nrow(icr142mat))
 
   #******************** Initialize params:
   ExactFinalMatch <<- rep('no', nrow(icr142mat))
