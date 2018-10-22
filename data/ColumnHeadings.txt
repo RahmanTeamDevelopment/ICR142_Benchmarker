@@ -2,13 +2,13 @@ File: FullResults.txt
 Sample	sample name in the ICR142 series
 Gene	HGNC symbol
 SangerCall	the most 3' representation annotated with CSN
-Type	ìbsî, ìdelî, ìinsî, ìcomplexî, or ìindelî for base substitutions, simple deletions, simple insertions, complex indels, or negative indel sites, respectively
+Type	‚Äúbs‚Äù, ‚Äúdel‚Äù, ‚Äúins‚Äù, ‚Äúcomplex‚Äù, or ‚Äúindel‚Äù for base substitutions, simple deletions, simple insertions, complex indels, or negative indel sites, respectively
 Transcript	the ENST ID from Ensembl v65 used to annotate the Sanger call
 CHR	chromosome
-EvaluatedPosition	evaluated hg19 site position, centre of designed amplicon
-POS	the left-aligned position in hg19 coordinates for variants
-REF	the reference allele in hg19 for variants
-ALT	the alternative allele in hg19 for variants
+EvaluatedPosition	evaluated GRCh37/GRCh38 site position, centre of designed amplicon
+POS	the left-aligned position in GRCh37/GRCh38 coordinates for variants
+REF	the reference allele in GRCh37/GRCh38 for variants
+ALT	the alternative allele in GRCh37/GRCh38 for variants
 Zygosity	"homozygous" or "heterozygous" for variants based on Sanger call
 SiteID	numeric ID within the ICR142 series
 Group	see GroupDescriptions below
