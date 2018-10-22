@@ -133,6 +133,7 @@ ___
 + correct: REF / ALT of G / A
 ```
 - `Multi-sample VCF` or `gVCF` files should be parsed to fulfill the above criteria.
+  **NOTE:** Remove any lines in the VCF file with a reference call, i.e., GT = 0/0 (only retain variant calls and missing genotype calls). 
 
 
 ## Data Access and Reproducibility
