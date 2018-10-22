@@ -4,8 +4,8 @@
 
 ## Introduction
 ___
-`ICR142 Benchmarker` is an easy to use tool assessing variant caller performance using the [ICR142 NGS validation series](https://www.ebi.ac.uk/ega/studies/EGAS00001001332).&nbsp;
-`ICR142 Benchmarker` reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and comparative performance with current widely-used open-sourced pipelines.
+`ICR142 Benchmarker` is an easy to use tool assessing germline SNV and Indel calling performance using the [ICR142 NGS validation series](https://www.ebi.ac.uk/ega/studies/EGAS00001001332), a dataset of Illumina platform based exome sequence data from 142 samples together with Sanger sequence data at 704 sites.
+`ICR142 Benchmarker` reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and comparative performance with current widely-used open-sourced pipelines. See [Publication](https://wellcomeopenresearch.org/articles/3-108/v1) for more details.
 
 
 ## Prerequisites
@@ -20,7 +20,7 @@ ___
 
 `ICR142 Benchmarker` can be downloaded from GitHub from [here](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/releases) in either `.zip` or `.tar.gz` format.
 - unpack the compressed file
-- Go to main directory: `cd ICR142_Benchmarker-vXXX`
+- Go to main directory: `cd ICR142_Benchmarker`
 - Install with: `./setup.sh`\
 `setup.sh` downloads and installs all required packages and dependencies, automatically creating a `setup.log` file.
 
@@ -36,7 +36,7 @@ ___
 - **INPUT** file - path to tab separated input file containing:\
 `Header line` with SampleID and Location \
 `Data` with:
-  1. Sample IDs in the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table.txt)
+  1. Sample IDs in the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt))
   2. Paths to 142 [VCF v4.X files](#notes)
 
 SampleID | Location
@@ -65,7 +65,7 @@ ___
 ### File: FullResults.txt	
 Column_name | Description
 ----------- | -----------
-Sample |sample name in the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table.txt)
+Sample |sample name in the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt)
 Gene | [HGNC symbol](https://www.genenames.org/) 
 SangerCall | the most 3' representation annotated with [CSN](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-015-0195-6)
 Type | `bs`, `del`, `ins`, `complex` or `indel` for _base substitutions_, _simple deletions_, _simple insertions_, _complex indels_, or _negative indel_ sites, respectively
@@ -76,7 +76,7 @@ POS | the left-aligned position in GRCh37/GRCh38 coordinates for variants
 REF | the reference allele in GRCh37/GRCh38 for variants
 ALT | the alternative allele in GRCh37/GRCh38 for variants
 Zygosity | `homozygous` or `heterozygous` for variants based on Sanger call
-SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table.txt)
+SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt)
 Group | `A`, `B` or `.` see [GroupDescriptions](#groupdescriptions)
 <Method_name> | `.` if there is a missing genotype, `0` if site is not called in the submitted call set, `1` if a base substitution is called when Type = _bs_, or integer value `X` if X indels are called when Type = _del_, _ins_, _complex_, or _indel_
 ConcordantFinalResult | `no` if either SangerCall is _No_ and method_name is _>0_ or SangerCall is not _No_ and method_name is _0_ or ., `yes` if SangerCall and method_name are concordant
@@ -101,7 +101,7 @@ FILTER | from submitted VCF file
 INFO | from submitted VCF file
 FORMAT | from submitted VCF file
 SAMPLE | from submitted VCF file
-SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table.txt)
+SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt)
 Length | length of variant, `0` for Base substitutions, `>0` for indels 
 
 ### File: FalsePositives.txt
@@ -117,7 +117,7 @@ FILTER | from submitted VCF file
 INFO | from submitted VCF file
 FORMAT | from submitted VCF file
 SAMPLE | from submitted VCF file
-SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table.txt)
+SiteID | numeric ID within the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt)
 Length | length of variant, `0` for Base substitutions, `>0` for indels 
 
 
