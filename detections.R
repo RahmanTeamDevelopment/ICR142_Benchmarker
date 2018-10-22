@@ -130,6 +130,7 @@ run_variant_detection <- function(SampleID, Location, icr142mat){
   VCFToRun <- scan(Location, sep="\n", what="character")
   if(sum(substr(VCFToRun,1,1) != "#") == 0) SampleDetected <- rep(0,length(VarIDVector)) else{
     VCFToRun <- read.table(Location, sep = "\t", hea = F, stringsAsFactors = F, quote = "", blank.lines.skip = TRUE, colClasses = c("character", "integer", rep("character", 8)))
+    VCFToRun [,1]  <-gsub("chr", "", VCFToRun[,1]) # Removing "chr" from column 1 if exists 
     SampleDetected <- sapply(VarIDVector, function(x){
       retval <- "check"
       if(icr142mat$Type[x] == "bs" & icr142mat$SangerCall[x] == "No") retval <- detect_negative_bs(x, VCFToRun, icr142mat)
