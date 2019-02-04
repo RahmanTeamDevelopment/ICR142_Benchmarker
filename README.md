@@ -36,7 +36,7 @@ ___
 - **INPUT** file - path to tab separated input file containing:\
 `Header line` with SampleID and Location \
 `Data` with:
-  1. Sample IDs in the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt))
+  1. Sample IDs in the [ICR142 series](https://github.com/RahmanTeamDevelopment/ICR142_Benchmarker/blob/master/data/ICR142_Validation_Table_GRCh38.txt)
   2. Paths to 142 [VCF v4.X files](#notes)
 
 SampleID | Location
@@ -144,7 +144,7 @@ Data can be downloaded from [OSF cloud](https://osf.io/h3zr9/).
 ## Links
 ___
 - [ICR142 Benchmarker Published Article](https://wellcomeopenresearch.org/articles/3-108/v2)
-- [Raw data on EGA (Europian Genome Archive)](https://www.ebi.ac.uk/ega/studies/EGAS00001001332)
+- [Raw data on EGA (European Genome Archive)](https://www.ebi.ac.uk/ega/studies/EGAS00001001332)
 - [OSF](https://osf.io/h3zr9/)
 - [TGMI](http://www.thetgmi.org/)
 
