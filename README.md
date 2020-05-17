@@ -146,7 +146,6 @@ ___
 - [ICR142 Benchmarker Published Article](https://wellcomeopenresearch.org/articles/3-108/v2)
 - [Raw data on EGA (European Genome Archive)](https://www.ebi.ac.uk/ega/studies/EGAS00001001332)
 - [OSF](https://osf.io/h3zr9/)
-- [TGMI](http://www.thetgmi.org/)
 
 ## License
 ___
