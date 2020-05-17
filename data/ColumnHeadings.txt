@@ -1,5 +1,5 @@
 File: FullResults.txt	
-Sample	sample name in the ICR142 series
+Sample	sample name in the ICR142 Series
 Gene	HGNC symbol
 SangerCall	the most 3' representation annotated with CSN
 Type	“bs”, “del”, “ins”, “complex”, or “indel” for base substitutions, simple deletions, simple insertions, complex indels, or negative indel sites, respectively
