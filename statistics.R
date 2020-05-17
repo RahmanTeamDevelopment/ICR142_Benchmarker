@@ -48,17 +48,17 @@ calculate_stats <- function(icr142mat, output_dir, ExactFinalMatch, submitter){
   # Overall specificity 
   spec_overall <- paste((true_neg_bs + true_neg_indel), '/', (table_neg_bs + table_neg_indel), " (", round(((true_neg_bs + true_neg_indel) / (table_neg_bs + table_neg_indel)) * 100, digits = 0), '%', ")", sep = '')
   
-  # Base substitutions false detection rate 
+  # Base substitutions False Detection Rate 
   false_pos_bs <- length(which(methods_mat == 1 & icr142mat$Type == "bs" & icr142mat$SangerCall == "No"))
   method_pos_bs <- length(which(methods_mat == 1 & icr142mat$Type == "bs"))
   fdr_bs <- paste(false_pos_bs, '/', method_pos_bs, " (", round((false_pos_bs / method_pos_bs) * 100, digits = 0), '%', ")", sep = '')
   
-  # Indels false detection rate 
+  # Indels False Detection Rate 
   false_pos_indel <- length(which(methods_mat >= 1 & icr142mat$Type != "bs" & icr142mat$SangerCall == "No"))
   method_pos_indel <- length(which(methods_mat >= 1 & icr142mat$Type != "bs"))
   fdr_indel <- paste(false_pos_indel, '/', method_pos_indel, " (", round((false_pos_indel / method_pos_indel) * 100, digits = 0), '%', ")", sep = '')
   
-  # Overall false detection rate 
+  # Overall False Detection Rate 
   fdr_overall <- paste((false_pos_bs + false_pos_indel), '/', (method_pos_bs + method_pos_indel), " (", round(((false_pos_bs + false_pos_indel) / (method_pos_bs + method_pos_indel)) * 100, digits = 0), '%', ")", sep = '')
   
   # Create Summary.txt
