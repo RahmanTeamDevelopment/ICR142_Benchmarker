@@ -5,7 +5,7 @@
 ## Introduction
 ___
 `ICR142 Benchmarker` is an easy to use tool assessing germline SNV and Indel calling performance using the [ICR142 NGS validation series](https://www.ebi.ac.uk/ega/studies/EGAS00001001332), a dataset of Illumina platform based exome sequence data from 142 samples together with Sanger sequence data at 704 sites.
-`ICR142 Benchmarker` reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and comparative performance with current widely-used open-sourced pipelines. See [Publication]([https://wellcomeopenresearch.org/articles/3-108/v2](https://f1000research.com/articles/5-386]) for more details.
+`ICR142 Benchmarker` reports a series of informative metrics with increasing levels of detail from overall calling performance to per site profiles and a one page report summarising both standalone performance and comparative performance with current widely-used open-sourced pipelines. See [Publication](https://wellcomeopenresearch.org/articles/3-108/v2](https://f1000research.com/articles/5-386) for more details.
 
 
 ## Prerequisites
